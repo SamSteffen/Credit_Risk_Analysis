@@ -38,7 +38,7 @@ To create this model, data was oversampled to yield 51,366 rows of data for the 
 
 The balanced accuracy score indicates that roughly 66% of the model's predictions as to whether an individual's credit risk was low or high, were correct. This model, like the previous model, also shows a 99% precision score, indicating that the data contains a large number of true positives. The recall (sensitivity) score in this model, however, shows a significant improvement over the first, and indicates that 70% of the positive cases in relation to the positive cases in the dataset were correctly predicted.
 
-### 3. Undersampling with ClusterCentroids.
+### 3. Undersampling with ClusterCentroids
 To create this model, data was undersampled to yield 246 rows of data for the target category, credit risk. An image of the classification report is shown below:
 
 <img width="618" alt="Undersampling_3" src="https://user-images.githubusercontent.com/104729703/192146615-0de8d0ed-bcc5-43a8-a6a0-5303bca933e9.png">
