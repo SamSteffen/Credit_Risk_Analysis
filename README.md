@@ -21,8 +21,8 @@ To create this model, data was oversampled to yield 51,366 rows of data for the 
 
 [image 1]
 
-* Balanced Accuracy Score: 0.6620175698580149
-* Precision Score (Avg): 0.99
+* Balanced Accuracy Score: 0.6620175698580149     
+* Precision Score (Avg): 0.99     
 * Recall Score (Avg): 0.60 
 
 The balanced accuracy score indicates that 66% of the model's predictions as to whether an individual's credit risk was low or high, were correct. The model shows a 99% precision score, indicating that the data contains a large number of true positives. The recall (sensitivity) score indicates that the classifier correctly predicted 60% of the positive cases in relation to all the positive cases in the dataset.
@@ -32,9 +32,9 @@ To create this model, data was oversampled to yield 51,366 rows of data for the 
 
 [image 2]
 
-Balanced Accuracy Score: 0.6568196079430206
-Precision Score (Avg): 0.99
-Recall Score (Avg): 0.70
+* Balanced Accuracy Score: 0.6568196079430206     
+* Precision Score (Avg): 0.99     
+* Recall Score (Avg): 0.70
 
 The balanced accuracy score indicates that roughly 66% of the model's predictions as to whether an individual's credit risk was low or high, were correct. This model, like the previous model, also shows a 99% precision score, indicating that the data contains a large number of true positives. The recall (sensitivity) score in this model, however, shows a significant improvement over the first, and indicates that 70% of the positive cases in relation to the positive cases in the dataset were correctly predicted.
 
@@ -43,9 +43,9 @@ To create this model, data was undersampled to yield 246 rows of data for the ta
 
 [image 3]
 
-Balanced Accuracy Score: 0.5447339051023905
-Precision Score: 0.99
-Recall Score: 0.40
+* Balanced Accuracy Score: 0.5447339051023905     
+* Precision Score: 0.99     
+* Recall Score: 0.40
 
 The balanced accuracy score indicates that roughly 54% of the model's predictions as to whether an individual's credit risk was low or high, were correct. This model, like the previous two models, also shows a 99% precision score, indicating that the data contains a large number of true positives. The recall (sensitivity) score in this model, however, shows a significant decrease over the first and second, and indicates that only 40% of the positive cases in relation to all the positive cases in the dataset were correctly predicted.
 
@@ -54,9 +54,9 @@ To create this model, data was oversampled and undersampled in combination to yi
 
 [image 4]
 
-Balanced Accuracy Score: 0.6461148570422992
-Precision Score: 0.99
-Recall Score: 0.57
+* Balanced Accuracy Score: 0.6461148570422992     
+* Precision Score: 0.99     
+* Recall Score: 0.57
 
 The balanced accuracy score indicates that roughly 65% of the model's predictions as to whether an individual's credit risk was low or high, were correct. This model, like the previous three models, also shows a 99% precision score, indicating that the data contains a large number of true positives. The recall (sensitivity) score in this model, while comparable to the SMOTE model, indicates that 57% of the positive cases in relation to all the positive cases in the dataset were correctly predicted.
 
@@ -67,9 +67,9 @@ To create this classifier, data was resampled to yield 68,470 rows of data for t
 
 [image 5]
 
-Balanced Accuracy Score: 0.782387479276459 
-Precision Score: 0.99
-Recall Score: 0.88
+* Balanced Accuracy Score: 0.782387479276459      
+* Precision Score: 0.99     
+* Recall Score: 0.88
 
 The balanced accuracy score indicates that roughly 78% of the model's predictions as to whether an individual's credit risk was low or high, were correct. This model, like the previous three models, also shows a 99% precision score, indicating that the data contains a large number of true positives. The recall (sensitivity) score in this model indicates that 88% of the positive cases in relation to all the positive cases in the dataset were correctly predicted, outperforming all four of the previous models in both accuracy and precision.
 
@@ -78,9 +78,9 @@ To create this classifier, data was resampled to yield 68,470 rows of data for t
 
 [image 6]
 
-Balanced Accuracy Score: 0.9316600714093861
-Precision Score: 0.99
-Recall Score: 0.94
+* Balanced Accuracy Score: 0.9316600714093861     
+* Precision Score: 0.99     
+* Recall Score: 0.94
 
 The balanced accuracy score indicates that roughly 93% of the model's predictions as to whether an individual's credit risk was low or high, were correct. This model, like the previous three models, also shows a 99% precision score, indicating that the data contains a large number of true positives. The recall (sensitivity) score in this model indicates that 94% of the positive cases in relation to all the positive cases in the dataset were correctly predicted, outperforming all five of the previous models in both accuracy and precision.
 
@@ -93,4 +93,4 @@ If the goal of our model is to be able to predict when a person will present a h
 
 We should be evaluating our model's performance by its ability to return True Negatives, that is, the model's ability to predict that a person is a high credit risk when they are in fact a high credit risk.
 
-For all the reasons mentioned above, it is our recommendation that none of the above models be used to predict high credit risk. For further testing, it would be my recommendation to utilize stratification in resampling the data, which can be important when the imbalance is large and the dataset is small.  
+For all the reasons mentioned above, **it is our recommendation that none of the above models be used to predict high credit risk**. For further testing, it would be my recommendation to utilize stratification in resampling the data, which can be important when the imbalance is large and the dataset is small.  
